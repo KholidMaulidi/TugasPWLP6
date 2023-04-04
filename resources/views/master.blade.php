@@ -16,6 +16,7 @@
     <div class="wrapper">
         @include('layout.navbar')
         @include('layout.sidebar')
+        @include('posts.layout')
         <div class="content-wrapper">
           <section class="content">
             <div class="container-fluid">
@@ -29,6 +30,7 @@
               @yield('selamat')
               @yield('aldinprofile')
               @yield('kholidprofile')
+              @yield('posts.layout')
                 <div class="row mb-2">
                 </div>
             </div><!-- /.container-fluid -->

@@ -5,6 +5,8 @@ use App\Http\Controllers\ContentController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\SelamatController;
+use App\Http\Controllers\NasabahController;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,7 +24,7 @@ use App\Http\Controllers\SelamatController;
 // });
 
 
-
+Route::resource('posts', NasabahController::class);
 Route::get('/pengalaman-kuliah', [ContentController::class, 'content'])->name('content_kuliah');
 
 Route::get('/profile/{id?}', [ContactController::class, 'profile'])->name('profile');

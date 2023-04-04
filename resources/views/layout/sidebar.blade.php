@@ -2,22 +2,13 @@
   <!-- Brand Logo -->
   <a href="../../index3.html" class="brand-link">
     <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-    <span class="brand-text font-weight-light">Pratikum 2</span>
+    <span class="brand-text font-weight-light">Nasabah</span>
+    {{-- <div class="info">
+      <a href="#" class="d-block">{{$post->email}}</a>
+    </div> --}}
   </a>
 
     <!-- Sidebar -->
-    <div class="sidebar">
-      <!-- SidebarSearch Form -->
-      <div class="form-inline">
-        <div class="input-group" data-widget="sidebar-search">
-          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
-          <div class="input-group-append">
-            <button class="btn btn-sidebar">
-              <i class="fas fa-search fa-fw"></i>
-            </button>
-          </div>
-        </div>
-      </div>
 
       <!-- Sidebar Menu -->
       <nav class="mt-3">
@@ -33,20 +24,12 @@
               </p>
             </a>
           </li>
+
           <li class="nav-item">
-            <a href="{{Route('student',['id'=>0])}}" class="nav-link">
-              <i class="nav-icon fas fa-copy"></i>
-              <p>
-                Data Mahasiswa
-                <span class="badge badge-info right">2</span>
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="{{Route('content_kuliah')}}" class="nav-link">
+            <a href="{{Route('posts.index')}}" class="nav-link">
               <i class="nav-icon far fa-image"></i>
               <p>
-                Pengalaman Kuliah
+                CRUD Nasabah
               </p>
             </a>
           </li>

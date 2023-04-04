@@ -14,7 +14,11 @@ return new class extends Migration
     public function up()
     {
         Schema::create('posts', function (Blueprint $table) {
-            $table->id();
+            $table->integer('no_rekening')->primary;
+            $table->string('nama', 50)->nullable();
+            $table->string('alamat', 10)->nullable();
+            $table->string('jenis_tabungan', 50)->nullable();
+            $table->string('saldo', 20)->nullable();
             $table->timestamps();
         });
     }

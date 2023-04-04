@@ -38,11 +38,8 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
-
-    public function index()
-    {
-        $user = Auth::user();
-        return view('index3', ['user' =>$user]);
+    public function email(){
+        return 'email';
     }
     
 }
